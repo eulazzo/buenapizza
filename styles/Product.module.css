@@ -108,3 +108,42 @@
   background-color: #b6391a;
   transition: all 0.4s ease-in-out;
 }
+
+@media screen and (max-width:480px) {
+
+  .container{
+    height: auto;
+    text-align: center;
+    flex-direction:column ;
+  }
+  
+  .imgContainer{
+    width: 70vw;
+    height: 40vh;
+  }
+    
+  .title{
+    margin:0
+  }
+  .sizes{
+    width: 100%;
+    padding: 0 20px;
+  }
+   .ingredients{
+    flex-direction: column;
+  }
+  .option{
+    margin:10px;
+    font-size: 18px;  
+  }
+  .checkbox{
+    width: 25px;
+    height: 25px;
+  }
+
+  .quantity, .button{
+    height: 50px;
+    padding: 10px 20px;
+  }
+
+}

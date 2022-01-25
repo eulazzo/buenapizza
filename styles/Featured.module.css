@@ -3,6 +3,7 @@
   overflow: hidden;
   /* background-image: url("../public/images/bg_1.jpg"); */
   background-color: #d1411e;
+  position: relative;
 
 }
 .arrowContainer{
@@ -85,3 +86,10 @@
   margin-top: 20px; 
 }
  
+
+@media screen and (max-width:480px){ 
+  .container{
+    height: 50vh;
+  }
+   
+}
