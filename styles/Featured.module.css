@@ -2,6 +2,8 @@
   height: calc(100vh - 100px);
   overflow: hidden;
   /* background-image: url("../public/images/bg_1.jpg"); */
+  background-color: #d1411e;
+
 }
 .arrowContainer{
   position: absolute;
@@ -14,13 +16,15 @@
   margin:auto;
   cursor: pointer;
   background-color: #d1411e;
+  
   color:#fafafa;
 }
 
 .pizzaInfoContainer{
   display: flex;
   flex-direction: column;
-  color: #d1411e;
+  /* color: #d1411e; */
+  color: #fafafa;
   max-width: 40%;
   text-align: center;
 }
@@ -41,7 +45,8 @@
   display: block;
   width: 70px;
   height: 3px;
-  background: #000;
+  /* background: #000; */
+  background: #fafafa;
   margin: 2px auto 20px auto;
 }
 .pizzaInfoItem:nth-child(4){
@@ -59,7 +64,8 @@
   display: block;
   width: 160px;
   height: 2px;
-  background: #000;
+  /* background: #000; */
+  background: #fafafa;
   margin: 2px auto 2px auto;
 }
 .wrapper{
@@ -69,6 +75,7 @@
   justify-content: space-between;
   padding: 0 150px;
   align-items: center; 
+  transition: all 1.5s ease-in-out 
 }
 
 .imgContainer{
