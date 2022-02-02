@@ -54,7 +54,12 @@
 .totalText{
   margin-top: 2px;
 }
- 
+.noProductOnCart{
+  color: gray;
+  padding: 50px;
+  font-size: 34px;
+  margin: 0 auto;
+} 
 
 .button{
   height: 30px;
