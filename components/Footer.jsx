@@ -14,7 +14,7 @@ const Footer = () => {
           </h2>
         </div>
         <div className={styles.card}>
-          <h1 className={styles.title}>FIND OUR RESTARANTS</h1>
+          <h1 className={styles.title}>FIND OUR RESTAURANTS</h1>
           <p className={styles.text}>
             276 - Some Address - #304.
             <br />
