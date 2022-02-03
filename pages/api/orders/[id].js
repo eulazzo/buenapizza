@@ -20,7 +20,9 @@ const handler = async (req, res) => {
       break;
     case "PUT":
       try {
-        const order = await Order.updateOne(id);
+        const order = await Order.findByIdAndUpdate(id, req.body, {
+          new: true,
+        });
         res.status(201).json(order);
       } catch (error) {
         res.status(500).json(error);
