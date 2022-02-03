@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     method,
     query: { id },
   } = req;
-   
+
   dbConnect();
 
   //get all pizzas
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
   //Edit a  pizza
   if (method === "PUT") {
     try {
-      const editedProduct = await Product.updateOne({id});
+      const editedProduct = await Product.updateOne(id);
       res.status(201).json(editedProduct);
     } catch (error) {
       res.status(500).json(error);
@@ -32,7 +32,7 @@ export default async function handler(req, res) {
   //delete a pizza
   if (method === "DELETE") {
     try {
-      const newProduct = await Product.deleteOne({id});
+      const newProduct = await Product.deleteOne(id);
       res.status(201).json(newProduct);
     } catch (error) {
       res.status(500).json(error);
