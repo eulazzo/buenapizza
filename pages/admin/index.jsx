@@ -1,7 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import styles from "../../styles/Admin.module.css";
 
 const Admin = ({ pizzas, orders }) => {
@@ -11,9 +10,7 @@ const Admin = ({ pizzas, orders }) => {
 
   const deleteProduct = async (id) => {
     try {
-      const { data: deleteProduct } = await axios.delete(
-        `http://localhost:3000/api/products/${id}`
-      );
+      await axios.delete(`http://localhost:3000/api/products/${id}`);
       setPizzaList(pizzaList.filter((pizza) => pizza._id !== id));
     } catch (error) {
       console.log(error);
@@ -22,7 +19,9 @@ const Admin = ({ pizzas, orders }) => {
 
   const nextStageStatus = async (id) => {
     const item = orderList.filter((order) => order._id === id)[0];
-    const currentStatus = item.status <= 2 && item.status;
+    const currentStatus = item.status;
+
+    if (item.status >= 2) return;
 
     try {
       const { data: changedOrder } = await axios.put(
@@ -100,7 +99,7 @@ const Admin = ({ pizzas, orders }) => {
           {orderList?.map((order) => (
             <tbody key={order._id}>
               <tr className={styles.trTitle}>
-                <td>{order._id.slice(0, 10)}...</td>
+                <td>{order._id.slice(0, 5)}...</td>
                 <td>{order.customer}</td>
                 <td>${order.total}</td>
                 <td>
@@ -108,7 +107,10 @@ const Admin = ({ pizzas, orders }) => {
                 </td>
                 <td>{status[order.status]}</td>
                 <td>
-                  <button onClick={() => nextStageStatus(order._id)}>
+                  <button
+                    className={styles.nextStageBtn}
+                    onClick={() => nextStageStatus(order._id)}
+                  >
                     Next Stage
                   </button>
                 </td>
@@ -121,7 +123,18 @@ const Admin = ({ pizzas, orders }) => {
   );
 };
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async (ctx) => {
+  const myCookie = ctx.req?.cookies || "";
+ 
+  if (myCookie.token !== process.env.TOKEN) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false, 
+      },
+    };
+  }
+
   const { data: pizzas } = await axios.get(
     "http://localhost:3000/api/products"
   );

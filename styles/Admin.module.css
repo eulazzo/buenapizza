@@ -6,9 +6,7 @@
 .item{
   flex: 1;
 }
-.item:nth-child(2){
-  margin-top: 15px;
-}
+ 
 .table{
   width: 100%;
   border-spacing: 20px;
@@ -30,4 +28,28 @@
 
 .button:last-child{
   background-color: crimson;
+}
+
+.nextStageBtn{
+  border-width: 0.5px;  
+  border-color: teal;
+  color:#000; 
+  padding:  5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.nextStageBtn:hover{
+  background-color: teal;
+  color:#fff;
+}
+
+.trTitle th{
+  color: #222;
+  opacity: 0.9;
+}
+
+.item h1{
+  color:#222;
+  opacity: 0.9;
+  font-weight: 500;
 }
