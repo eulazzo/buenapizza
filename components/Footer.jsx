@@ -16,7 +16,7 @@ const Footer = () => {
         <div className={styles.card}>
           <h1 className={styles.title}>FIND OUR RESTAURANTS</h1>
           <p className={styles.text}>
-            276 - Some Address - #304.
+            276 - Some Address.
             <br />
             Bocaiuva, 39390-000
             <br />
@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
 
           <p className={styles.text}>
-            276 - Some Address - #304.
+            276 - Some Address.
             <br />
             Bocaiuva, 39390-000
             <br />
@@ -32,14 +32,14 @@ const Footer = () => {
           </p>
 
           <p className={styles.text}>
-            276 - Some Address - #304.
+            276 - Some Address.
             <br />
             Bocaiuva, 39390-000
             <br />
             (38) 99914110
           </p>
           <p className={styles.text}>
-            276 - Some Address - #304.
+            276 - Some Address.
             <br />
             Bocaiuva, 39390-000
             <br />

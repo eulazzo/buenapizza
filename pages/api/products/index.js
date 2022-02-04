@@ -20,6 +20,8 @@ export default async function handler(req, res) {
 
   //crete a new pizza
   if (method === "POST") {
+     
+
     if (!token || token !== process.env.TOKEN) {
       return res.status(401).json("Not allowed");
     }

@@ -25,7 +25,8 @@ const Add = ({ setClose }) => {
   const handleExtra = (e) => {
     setExtraOptions((prev) => [...prev, extra]);
   };
-
+  
+ 
   const handleCreate = async () => {
     const data = new FormData();
     data.append("file", file);
@@ -44,7 +45,8 @@ const Add = ({ setClose }) => {
         extraOptions,
         img: url,
       };
-
+      console.log(newProduct);
+       
       await axios.post("http://localhost:3000/api/products", newProduct);
       setClose(true);
     } catch (err) {
@@ -122,7 +124,7 @@ const Add = ({ setClose }) => {
             </button>
           </div>
           <div className={styles.extraItems}>
-            {extraOptions.map((option) => (
+            {extraOptions?.map((option) => (
               <span key={option.text} className={styles.extraItem}>
                 {option.text}
               </span>
