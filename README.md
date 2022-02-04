@@ -1,7 +1,8 @@
+
 <h1 align="center">
-   BUENNAPIZZA
+   <img alt="sigma" src="github/logo_2.svg" width="250px" />
 </h1>
-  
+
 <div align="center">
   <h1>Buennapizza - Order the best pizza on town </h1>
 </div>
@@ -22,3 +23,93 @@
   <img src="https://img.shields.io/github/last-commit/eulazzo/buenapizza?color=222&labelColor=d1411e" alt="Commits">
   <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=222&labelColor=d1411e" alt="License">
 </p>
+
+
+ ![BUENAPIZZA INTRO GIF](github/introGIF.gif)
+
+# Buenapizza
+
+<p>Pizza Ordering Website<br>
+<p>Developed with <code>NextJS</code>,<code>Axios</code>,<code>Mongoose</code>, and <code>Redux ToolKit</code>  </p> 
+
+# About the project
+
+Functionalities:
+- Login on the Admin Painel
+- Add a new pizza
+- Payment using paypal services or `Cash On Delivered` payment method
+- Delete pizza from catalog on the Admin Dashboard
+- See and change the status order: `preparing` to `on the way` to `delivered`
+
+</br>
+
+
+## :camera: See the app's features:
+
+<h2>Payment with sandbox PayPal account</h2>
+
+![SIGMA CHAT GIF](github/paypalGIF.gif)
+
+<h2>Cash on delivered payment method</h2>
+
+![SIGMA CHAT GIF](github/cashOnDeliveredGIF.gif)
+
+<h2>Add a new pizza on catalog</h2>
+
+![SIGMA CHAT GIF](github/addProductGIF.gif)
+
+<h2>Admin Dashboard</h2>
+
+![SIGMA CHAT GIF](github/adminGIF.gif)
+
+ ## Getting started
+
+1. Clone this repo using `git@github.com:eulazzo/buenapizza.git`
+2. Move yourself to the appropriate directory: `cd buenapizza`<br />
+3. Run `npm install` to install dependencies<br />
+
+### Getting started with the backend server
+
+1. Create a `.env` file and add the MongoDB url connection in MONGO_URL field
+3. if you dont have yarn installed, type <code> npm install --global yarn </code> on terminal to install it or just use npm instead <br>
+4. Run `yarn run dev` to start the application </br>
+
+## :rocket: Technologies
+
+<table>
+   
+  <thead>
+    <th>Back-end</th>
+    <th>Front-end</th>
+  </thead>
+   
+  <tbody>
+    <tr>
+      <td>Node.js</td>
+      <td>NextJS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CSS</td>
+    </tr>
+    <tr>
+      <td>Axios</td>
+      <td>Axios</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>React Hooks</td>
+    </tr>
+  </tbody>
+  
+</table>
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
+
+
+ 
+
+ 
+ 
