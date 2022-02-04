@@ -4,8 +4,11 @@ import Product from "../../../models/Product";
 export default async function handler(req, res) {
   const {
     method,
+    cookies,
     query: { id },
   } = req;
+
+  const token = cookies.token;
 
   dbConnect();
 
@@ -21,6 +24,9 @@ export default async function handler(req, res) {
 
   //Edit a  pizza
   if (method === "PUT") {
+    if (!token || token !== process.env.TOKEN) {
+      return res.status(401).json("Not allowed");
+    }
     try {
       const editedProduct = await Product.updateOne(id);
       res.status(201).json(editedProduct);
@@ -31,6 +37,9 @@ export default async function handler(req, res) {
 
   //delete a pizza
   if (method === "DELETE") {
+    if (!token || token !== process.env.TOKEN) {
+      return res.status(401).json("Not allowed");
+    }
     try {
       await Product.findByIdAndDelete(id);
       res.status(200).json("The product has been deleted");
