@@ -1,6 +1,6 @@
 
 <h1 align="center">
-   <img alt="sigma" src="github/logo_2.svg" width="250px" />
+   <img alt="sigma" src="github/logo_2.svg" width="220px" />
 </h1>
 
 <div align="center">
