@@ -40,19 +40,27 @@ Functionalities:
 - Delete pizza from catalog on the Admin Dashboard
 - See and change the status order: `preparing` to `on the way` to `delivered`
 
-## About the project
+## How some feature works
 
+### About Nextjs, Prop Drilling and Redux Toolkit
 <p>
    The cool thing about Nextjs is because it's a  full-stack framework(yes! It handles both the frontend and backend of your application) and there are a variety of rendering methods - even mixing and matching those methods as needed.</br></br>
    About the project, on the pizza details page,a customer can choose the pizza size, add additional ingredients and the pizza quantity.So...when <code>add to cart</code> button is clicked the navbar cart item is updated, to handle that i could choose some ways to do so, like <code>Prop Drilling</code> as we know, not a good idea, second one was <code>ContextAPI</code> and finally <code>State Management Libraries</code> which was used, to be more precise: Redux Toolkit.</br></br>
-   Because <code>STRIPE</code> i already have a project with( Ecommerce,that u can check out on my Github pinned projects), for payments <code>PAYPAL</code> service was chosen and  the <code>Cash on delivery</code> option was added as well. Cash on delivery(COD) is a type of transaction where the recipient pays for a good at the time of delivery rather than using credit.</br></br>
+</p>
+
+#### Why Paypal? And Cash on delivery thing
+<p>
+   Because <code>STRIPE</code> i already have a project with( Ecommerce,that u can check out on my Github pinned projects), for payments <code>PAYPAL</code> service was chosen and  the <code>Cash on delivery</code> option was added as well. Cash on delivery(COD) is a type of transaction where the recipient pays for a good at the time of delivery rather than using credit.
+</p>
+   
+#### PayPal Setup
+<p>
   To configure paypal, I installed <code>yarn add @paypal/react-paypal-js</code>, for more info check out this link https://paypal.github.io/react-paypal-js/?path=/docs/example-paypalbuttons--default, basically we are gonna giver our options, like <code>Amount</code>, <code>currency</code> and <code>button style</code>, after that a button wrapper is created, and inside use ContextApi taking the options and create a paypal button and this button was used on the  Cart Component.
   </br></br>
   First `PayPalScriptProvider`, the `ButtonWrapper` and when the button is clicked we give paypal or credit card info and the librarie handle everything, if everything is okay, it's going to return the <code>OnAprove</code> function and inside of if, the nextjs code is is written. 
   The next step was create a paypal developer account on the following site: https://developer.paypal.com/home, then create a sandbox account. The paypal sandbox account is basically two accounts that we are given credit for making fake payments, one is personal(To buy something) and other business(To receive the "money"). And finally on the `My Apps & Credentials` was necessary to create a new application and with the id provided in options:client-Id on the  <code>PaypalScriptProvider</code> button was pasted, With all that set up, everything was ready and the payment method was working.
-   
-   
-</p>
+ </p>
+
 
 ## :camera: See the app's features:
 
