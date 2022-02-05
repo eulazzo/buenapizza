@@ -35,7 +35,7 @@
 Functionalities:
 - Login on the Admin Painel
 - Add a new pizza
-- Payment using paypal services or `Cash On Delivered` payment method
+- Payment using paypal services and `Cash On Delivered` payment method
 - Delete pizza from catalog on the Admin Dashboard
 - See and change the status order: `preparing` to `on the way` to `delivered`
 
