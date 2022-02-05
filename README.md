@@ -43,6 +43,15 @@ Functionalities:
 
 </br>
 
+## Little description about the project
+
+<p>
+   The cool thing about Nextjs is because it's a  full-stack framework(yes! It handles both the frontend and backend of your application) and there are a variety of rendering methods - even mixing and matching those methods as needed.
+   On the pizza details page, customer can choose the pizza size, add additional ingredients and the pizza quantity.So...when <code>add to cart</code> button is clicked the navbar cart item is updated, to handle that i could choose some ways to do so, like <code>Prop Drilling</code> as we know, not a good idea, second one was <code>ContextAPI</code> and finally <code>State Management Libraries</code> which was used, to be more precise: Redux Toolkit.
+   because <code>STRIPE</code> stripe i already have a project with, for payments <code>PAYPAL</code> service was chosen and  the Cash on delivery option was added as well. Cash on delivery(COD) is a type of transaction where the recipient pays for a good at the time of delivery rather than using credit.
+   
+   
+</p>
 
 ## :camera: See the app's features:
 
@@ -50,7 +59,7 @@ Functionalities:
 
 ![SIGMA CHAT GIF](github/paypalGIF.gif)
 
-<h2>Cash on delivered payment method</h2>
+<h2>Cash on delivery (COD) payment method</h2>
 
 ![SIGMA CHAT GIF](github/cashOnDeliveredGIF.gif)
 
