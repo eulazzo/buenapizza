@@ -26,12 +26,11 @@
 
 ![BUENAPIZZA INTRO GIF](github/introGIF.gif)
 
-# Buenapizza
-
-<p>Pizza Ordering Website<br>
-<p>Developed with <code>NextJS</code>,<code>Axios</code>,<code>Mongoose</code>, and <code>Redux ToolKit</code></p> 
 
 # About the project
+
+<p>Pizza Ordering Website<br>
+<p>Developed with <code>NextJS</code>,<code>Axios</code>, <code>Mongoose</code>, and <code>Redux ToolKit</code></p> 
 
 Functionalities:
 - Login on the Admin Painel
