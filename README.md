@@ -55,9 +55,9 @@ Functionalities:
    
 #### PayPal Setup
 <p>
-  To configure paypal, I installed <code>yarn add @paypal/react-paypal-js</code>, for more info check out this link https://paypal.github.io/react-paypal-js/?path=/docs/example-paypalbuttons--default, basically we are gonna giver our options, like <code>Amount</code>, <code>currency</code> and <code>button style</code>, after that a button wrapper is created, and inside use ContextApi taking the options and create a paypal button and this button was used on the  Cart Component.
+  To configure paypal, I installed <code>yarn add @paypal/react-paypal-js</code>, for more info check out this link https://paypal.github.io/react-paypal-js/?path=/docs/example-paypalbuttons--default, basically we give our options, like <code>Amount</code>, <code>currency</code> and <code>button style</code>, after that a button wrapper is created, and inside  is used ContextApi that take the options and create a paypal button and this button was used on the  Cart Component.
   </br></br>
-  First `PayPalScriptProvider`, the `ButtonWrapper` and when the button is clicked we give paypal or credit card info and the librarie handle everything, if everything is okay, it's going to return the <code>OnAprove</code> function and inside of if, the nextjs code is is written. 
+  First `PayPalScriptProvider`,then the `ButtonWrapper`, and when the button is clicked we give paypal or credit card info and the librarie handle everything, if everything is okay, it's going to return the <code>OnAprove</code> function and inside of if, the nextjs code is is written. 
   The next step was create a paypal developer account on the following site: https://developer.paypal.com/home, then create a sandbox account. The paypal sandbox account is basically two accounts that we are given credit for making fake payments, one is personal(To buy something) and other business(To receive the "money"). And finally on the `My Apps & Credentials` was necessary to create a new application and with the id provided in options:client-Id on the  <code>PaypalScriptProvider</code> button was pasted, With all that set up, everything was ready and the payment method was working.
  </p>
 
