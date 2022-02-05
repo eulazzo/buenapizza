@@ -4,7 +4,7 @@
 </h1>
 
 <div align="center">
-  <h1>Buennapizza - Order the best pizza on town </h1>
+  <h1>Buenapizza - Order the best pizza on town </h1>
 </div>
 
 <p align="center" >
