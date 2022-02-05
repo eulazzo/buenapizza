@@ -57,19 +57,19 @@ Functionalities:
 
 <h2>Payment with sandbox PayPal account</h2>
 
-![SIGMA CHAT GIF](github/paypalGIF.gif)
+![buennapizza PAYPAL](github/paypalGIF.gif)
 
 <h2>Cash on delivery (COD) payment method</h2>
 
-![SIGMA CHAT GIF](github/cashOnDeliveredGIF.gif)
+![buennapizza COD](github/cashOnDeliveredGIF.gif)
 
 <h2>Add a new pizza on catalog</h2>
 
-![SIGMA CHAT GIF](github/addProductGIF.gif)
+![buennapizza newPizza](github/addProductGIF.gif)
 
 <h2>Admin Dashboard</h2>
 
-![SIGMA CHAT GIF](github/adminGIF.gif)
+![buennapizza admin dashboard](github/adminGIF.gif)
 
  ## Getting started
 
