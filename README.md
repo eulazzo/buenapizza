@@ -40,8 +40,6 @@ Functionalities:
 - Delete pizza from catalog on the Admin Dashboard
 - See and change the status order: `preparing` to `on the way` to `delivered`
 
-</br>
-
 ## About the project
 
 <p>
