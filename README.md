@@ -35,9 +35,9 @@
 Functionalities:
 - Login on the Admin Painel
 - Add a new pizza
-- Payment using paypal services and `Cash On Delivered` payment method
+- Payment using paypal services and <code>Cash On Delivered</code> payment method
 - Delete pizza from catalog on the Admin Dashboard
-- See and change the status order: `preparing` to `on the way` to `delivered`
+- See and change the status order: <code>preparing</code> to <code>on the way</code> to <code>delivered</code>
 
 ## How some feature works
 
@@ -49,15 +49,15 @@ Functionalities:
 
 #### Why Paypal? And Cash on delivery thing
 <p>
-   Because <code>STRIPE</code> i already have a project with( Ecommerce,that u can check out on my Github pinned projects), for payments <code>PAYPAL</code> service was chosen and  the <code>Cash on delivery</code> option was added as well. Cash on delivery(COD) is a type of transaction where the recipient pays for a good at the time of delivery rather than using credit.
+   Because <code>STRIPE</code> i already have a project with (An ecommerce,that u can check it out on my Github pinned projects), for payments <code>PAYPAL</code> service was chosen and  the <code>Cash on delivery</code> option was added as well. Cash on delivery(COD) is a type of transaction where the recipient pays for a good at the time of delivery rather than using credit.
 </p>
    
 #### PayPal Setup
 <p>
   To configure paypal, I installed <code>yarn add @paypal/react-paypal-js</code>, for more info check out this link https://paypal.github.io/react-paypal-js/?path=/docs/example-paypalbuttons--default, basically we give our options, like <code>Amount</code>, <code>currency</code> and <code>button style</code>, after that a button wrapper is created, and inside  is used ContextApi that take the options and create a paypal button and this button was used on the  Cart Component.
   </br></br>
-  First `PayPalScriptProvider`,then the `ButtonWrapper`, and when the button is clicked we give paypal or credit card info and the librarie handle everything, if everything is okay, it's going to return the <code>OnAprove</code> function and inside of if, the nextjs code is is written. 
-  The next step was create a paypal developer account on the following site: https://developer.paypal.com/home, then create a sandbox account. The paypal sandbox account is basically two accounts that we are given credit for making fake payments, one is personal(To buy something) and other business(To receive the "money"). And finally on the `My Apps & Credentials` was necessary to create a new application and with the id provided in options:client-Id on the  <code>PaypalScriptProvider</code> button was pasted, With all that set up, everything was ready and the payment method was working.
+  First <code>PayPalScriptProvider</code>,then the <code>ButtonWrapper</code>, and when the button is clicked we give paypal or credit card info and the librarie handle everything, if everything is okay, it's going to return the <code>OnAprove</code> function and inside of if, the nextjs code is is written. 
+  The next step was to create a paypal developer account on the following site: https://developer.paypal.com/home, then create a sandbox account. The paypal sandbox account is basically two accounts that we are given credit for making fake payments, one is personal(To buy something) and other business(To receive the "money"). And finally on the <code>My Apps & Credentials</code> was necessary to create a new application and with the id provided in options:client-Id on the  <code>PaypalScriptProvider</code> button was pasted, With all that set up, everything was ready and the payment method was working.
  </p>
 
 
