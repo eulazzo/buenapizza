@@ -29,10 +29,13 @@
 
 # About the project
 
-<p>Pizza Ordering Website<br>
+### Pizza Ordering Website 
+<p>For truly autentic pizza restaurant, there is no better place to visit than the Buenna Pizza.</br>
+For truly autentic pizza restaurant, there is no better place to visit than the Buenna Pizza. Local ingredients are used to craft pizzas that are bursting with flavours you truly won’t find anywhere else.
+<p>
 <p>Developed with <code>NextJS</code>,<code>Axios</code>, <code>Mongoose</code>, and <code>Redux ToolKit</code></p> 
 
-Functionalities:
+#### Functionalities:
 - Login on the Admin Painel
 - Add a new pizza
 - Payment using paypal services and <code>Cash On Delivered</code> payment method
