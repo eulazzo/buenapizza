@@ -31,7 +31,7 @@
 
 ### Pizza Ordering Website 
 <p>For truly autentic pizza restaurant, there is no better place to visit than the Buenna Pizza.</br>
-For truly autentic pizza restaurant, there is no better place to visit than the Buenna Pizza. Local ingredients are used to craft pizzas that are bursting with flavours you truly won’t find anywhere else.
+Local ingredients are used to craft pizzas that are bursting with flavours you truly won’t find anywhere else.
 <p>
 <p>Developed with <code>NextJS</code>,<code>Axios</code>, <code>Mongoose</code>, and <code>Redux ToolKit</code></p> 
 
