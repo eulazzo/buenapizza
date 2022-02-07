@@ -54,11 +54,11 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 <p>Developed with <code>NextJS</code>,<code>Axios</code>, <code>Mongoose</code>, and <code>Redux ToolKit</code></p> 
 
 #### Features:
-- Login on the Admin Painel
-- Add a new pizza
-- Payment using paypal services and <code>Cash On Delivered</code> payment method
-- Delete pizza from catalog on the Admin Dashboard
-- See and change the status order: <code>preparing</code> to <code>on the way</code> to <code>delivered</code>
+- [X] Login on the Admin Painel
+- [X] Add a new pizza
+- [X] Payment using paypal services and <code>Cash On Delivered</code> payment method
+- [X] Delete pizza from catalog on the Admin Dashboard
+- [X] See and change the status order: <code>preparing</code> to <code>on the way</code> to <code>delivered</code>
 
 ## How some feature works
 
