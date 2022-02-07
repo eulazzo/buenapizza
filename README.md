@@ -29,6 +29,7 @@
 ### Topics
 
 * [About the project](#about-the-project)
+   * [Pizza Ordering Website ](#pizza-ordering-website)
    * [Features](#features)
 * [How some feature works](#how-some-feature-works)
    * [About Nextjs, Prop Drilling and Redux Toolkit](#about-nextjs-prop-drilling-and-redux-toolkit)
