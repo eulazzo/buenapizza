@@ -8,11 +8,11 @@
 </div>
 
 <p align="center" >
-  <a href="#-about-the-project"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
-  <a href="#-paypal">Techs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-conteúdos-aplicados"> Content</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-suporte"> Suport </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licen%C3%A7a">License</a>
+  <a href="#about-the-project"> About </a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+  <a href="#how-some-feature-works">How some feature works</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#app-features-so-far">Gifs</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technologies"> Technologies </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#license">License</a>
 </p>
 
 <p align="center">
@@ -26,6 +26,23 @@
 
 ![BUENAPIZZA INTRO GIF](github/introGIF.gif)
 
+### Topics
+
+* [About the project](#about-the-project)
+   * [Features](#features)
+* [How some feature works](#how-some-feature-works)
+   * [About Nextjs, Prop Drilling and Redux Toolkit](#about-nextjs-prop-drilling-and-redux-toolkit)
+   * [Why Paypal? And Cash on delivery thing](why-paypal-and-cash-on-delivery-thing) 
+   * [PayPal Setup](#paypal-setup) 
+* [App features so far (GIFS)](#app-features-so-far) 
+   * [Payment with sandbox PayPal account](#payment-with-sandbox-paypal-account)
+   * [Cash on delivery (COD) payment method](#cash-on-delivery-cod-payment-method)
+   * [Add a new pizza on catalog](#add-a-new-pizza-on-catalog)
+   * [ Admin Dashboard](#admin-dashboard)
+* [Getting Started](#getting-started)
+* [Technologies](#technologies)
+* [Licence](#licence)
+
 
 # About the project
 
@@ -35,7 +52,7 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 <p>
 <p>Developed with <code>NextJS</code>,<code>Axios</code>, <code>Mongoose</code>, and <code>Redux ToolKit</code></p> 
 
-#### Functionalities:
+#### Features:
 - Login on the Admin Painel
 - Add a new pizza
 - Payment using paypal services and <code>Cash On Delivered</code> payment method
@@ -50,35 +67,35 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
    About the project, on the pizza details page,a customer can choose the pizza size, add additional ingredients and the pizza quantity.So...when <code>add to cart</code> button is clicked the navbar cart item is updated, to handle that i could choose some ways to do so, like <code>Prop Drilling</code> as we know, not a good idea, second one was <code>ContextAPI</code> and finally <code>State Management Libraries</code> which was used, to be more precise: Redux Toolkit.</br></br>
 </p>
 
-#### Why Paypal? And Cash on delivery thing
+### Why Paypal? And Cash on delivery thing
 <p>
    Because <code>STRIPE</code> i already have a project with (an ecommerce,that you can check it out on my Github pinned projects) for payments, <code>PAYPAL</code> service was chosen and <code>Cash on delivery</code> option was added as well. Cash on delivery(COD) is a type of transaction where the recipient pays for a good at the time of delivery rather than using credit.
 </p>
    
 #### PayPal Setup
 <p>
-  To configure paypal, I installed <code>yarn add @paypal/react-paypal-js</code>, for more info check it out this link https://paypal.github.io/react-paypal-js/?path=/docs/example-paypalbuttons--default, basically we give our options, like <code>Amount</code>, <code>currency</code> and <code>button style</code>, after that a button wrapper is created, and inside  is used ContextApi that take the options and create a paypal button and this button was used on the  Cart Component.
+  To configure paypal, I installed <code>yarn add @paypal/react-paypal-js</code>, for more info check it out this <a href="https://paypal.github.io/react-paypal-js/?path=/docs/example-paypalbuttons--default">Link</a> .Basically we give our options, like <code>Amount</code>, <code>currency</code> and <code>button style</code>, after that a button wrapper is created, and inside  is used ContextApi that take the options and create a paypal button and this button was used on the  Cart Component.
   </br></br>
   First <code>PayPalScriptProvider</code>,then the <code>ButtonWrapper</code>, and when the button is clicked we give paypal or credit card info and the librarie handle everything, if everything is okay, it's going to return the <code>OnAprove</code> function and inside of if, the nextjs code is is written. 
-  The next step was to create a paypal developer account on the following site: https://developer.paypal.com/home, then create a sandbox account. The paypal sandbox account is basically two accounts that we are given credit for making fake payments, one is personal(To buy something) and other business(To receive the "money"). And finally on the <code>My Apps & Credentials</code> was necessary to create a new application and i copied the id provided and in options:client-Id on the  <code>PaypalScriptProvider</code> button the id key was pasted, With all that set up, everything was ready and the payment method was working.
+  The next step was to create a paypal developer account on the following site: <a href="https://developer.paypal.com/home">Paypal developer account</a> , then create a sandbox account. The paypal sandbox account is basically two accounts that we are given credit for making fake payments, one is personal(To buy something) and other business(To receive the "money"). And finally on the <code>My Apps & Credentials</code> was necessary to create a new application and i copied the id provided and in options:client-Id on the  <code>PaypalScriptProvider</code> button the id key was pasted, With all that set up, everything was ready and the payment method was working.
  </p>
 
 
-## :camera: See the app's features:
+##  App features so far:
 
-<h2>Payment with sandbox PayPal account</h2>
+### Payment with sandbox PayPal account
 
 ![buennapizza PAYPAL](github/paypalGIF.gif)
 
-<h2>Cash on delivery (COD) payment method</h2>
+### Cash on delivery (COD) payment method
 
 ![buennapizza COD](github/cashOnDeliveredGIF.gif)
 
-<h2>Add a new pizza on catalog</h2>
+### Add a new pizza on catalog
 
 ![buennapizza newPizza](github/addProductGIF.gif)
 
-<h2>Admin Dashboard</h2>
+### Admin Dashboard
 
 ![buennapizza admin dashboard](github/adminGIF.gif)
 
@@ -94,7 +111,8 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 3. if you dont have yarn installed, type <code> npm install --global yarn </code> on terminal to install it or just use npm instead <br>
 4. Run `yarn run dev` to start the application </br>
 
-## :rocket: Technologies
+
+## Technologies
 
 <table>
    
