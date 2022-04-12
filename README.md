@@ -60,6 +60,128 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 - [X] Delete pizza from catalog on the Admin Dashboard
 - [X] See and change the status order: <code>preparing</code> to <code>on the way</code> to <code>delivered</code>
 
+
+
+# E-COMMERCE SHOPPER :shopping_cart: :shopping_cart: :shopping_cart:
+
+
+## Link do deploy no Heroku
+[Link da API](https://shopper-backend-germana.herokuapp.com/)
+
+<h6> Projeto de Back End - Case para seleção da Shopper </h6>
+
+- Este é um projeto básico de back end de e-commerce, com funções de exibir produtos e criar pedidos.
+
+## DOCUMENTATION
+
+* Clonar este repositório em uma pasta própria;
+* Executar `npm install` para adicionar as dependências;
+* Criar um arquivo `.env` na raiz do projeto e preencher as chaves a seguir com os valores apropriados:
+   ```
+   MONGO_URL = 
+   ADMIN_USERNAME = 
+   ADMIN_PASSWORD = 
+   TOKEN =  
+   ```
+* run `npm run start` to start the server.
+
+## Endpoints
+
+* ### CreateProduct
+  * Método: POST
+  * Path: `/products`
+  * Input:  
+    ```
+    {
+      "title":"Calabresa Divina III",
+      "img":"/image/Featured1.png",
+      "desc":"Lorem ipsulum",
+      "prices":[20,10,30],
+      "extraOptions":[
+         {
+            "text":"Garlic Sauce",
+           "price":40
+         },
+         {
+            "text":"Divine Sauce",
+           "price":40
+         }
+       ]
+     }
+    ```
+   * Ouput:
+     ```
+     {
+         "title": "Calabresa Divina III",
+         "desc": "Lorem ipsulum",
+         "img": "/image/Featured1.png",
+         "prices": [
+            20,
+            10,
+            30
+         ],
+         "extraOptions": [
+            {
+               "text": "Garlic Sauce",
+               "price": "40",
+               "_id": "61f993b1802367ad2b6fea1d"
+            },
+            {
+               "text": "Divine Sauce",
+               "price": "40",
+               "_id": "61f993b1802367ad2b6fea1e"
+            }
+         ],
+         "_id": "61f993b1802367ad2b6fea1c",
+         "createdAt": "2022-02-01T20:10:25.541Z",
+         "updatedAt": "2022-02-01T20:10:25.541Z",
+         "__v": 0
+      }
+     ```
+    
+
+
+### getProduct
+* Método: GET
+* Path: `/products`
+* Ouput: 
+  ```
+       [
+         {
+            "_id": "61f87ea142434e0cfa25ff62",
+            "title": "Darlicone",
+            "desc": "Lorem ipsulum",
+            "img": "/img/pizza.png",
+            "prices": [
+               12,
+               13,
+               60
+            ],
+            "extrasOptions": [],
+            "createdAt": "2022-02-01T00:28:17.181Z",
+            "updatedAt": "2022-02-01T00:28:17.181Z",
+            "__v": 0
+         },
+         {
+            "_id": "61f95285bbc7ff6da7369094",
+            "title": "Calabresa",
+            "desc": "Lorem ipsulum",
+            "img": "/img/pizza.png",
+            "prices": [
+               20,
+               10,
+               30
+            ],
+            "extrasOptions": [],
+            "createdAt": "2022-02-01T15:32:21.526Z",
+            "updatedAt": "2022-02-01T15:32:21.526Z",
+            "__v": 0
+         }
+      ]
+  ```
+ 
+
+
 ## How some feature works
 
 ### About Nextjs, Prop Drilling and Redux Toolkit
