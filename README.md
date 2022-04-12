@@ -80,7 +80,7 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 ## Endpoints
 
 * ### CreateProduct
-  * Método: POST
+  * Method: POST
   * Path: `/products`
   * Input:  
     ```
@@ -134,7 +134,7 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 
 
 ### getProduct
-* Método: GET
+* Method: GET
 * Path: `/products`
 * Ouput: 
   ```
@@ -175,7 +175,7 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 
 
 ### DeleteProduct
-* Método: DELETE
+* Method: DELETE
 * Path: `/products/:id`
 * Ouput: (Will return `Not allowed in case you not authorized to make this actin`)
   ```
