@@ -66,6 +66,8 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 
 ## DOCUMENTATION
 
+### First Steps
+
 * Clone this repo into you own folder with `git@github.com:eulazzo/buenapizza.git`
 * run `npm install` to install all dependencies;
 * Create a `.env` file and fill in the following keys:
