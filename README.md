@@ -61,7 +61,6 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 - [X] See and change the status order: <code>preparing</code> to <code>on the way</code> to <code>delivered</code>
 
 
-
 # PIZZA ORDERING WEBSITE 🍕 🍕 🍕
 
 
@@ -139,41 +138,50 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 * Path: `/products`
 * Ouput: 
   ```
-       [
-         {
-            "_id": "61f87ea142434e0cfa25ff62",
-            "title": "Darlicone",
-            "desc": "Lorem ipsulum",
-            "img": "/img/pizza.png",
-            "prices": [
-               12,
-               13,
-               60
-            ],
-            "extrasOptions": [],
-            "createdAt": "2022-02-01T00:28:17.181Z",
-            "updatedAt": "2022-02-01T00:28:17.181Z",
-            "__v": 0
-         },
-         {
-            "_id": "61f95285bbc7ff6da7369094",
-            "title": "Calabresa",
-            "desc": "Lorem ipsulum",
-            "img": "/img/pizza.png",
-            "prices": [
-               20,
-               10,
-               30
-            ],
-            "extrasOptions": [],
-            "createdAt": "2022-02-01T15:32:21.526Z",
-            "updatedAt": "2022-02-01T15:32:21.526Z",
-            "__v": 0
-         }
-      ]
+    [
+      {
+         "_id": "61f87ea142434e0cfa25ff62",
+         "title": "Darlicone",
+         "desc": "Lorem ipsulum",
+         "img": "/img/pizza.png",
+         "prices": [
+            12,
+            13,
+            60
+         ],
+         "extrasOptions": [],
+         "createdAt": "2022-02-01T00:28:17.181Z",
+         "updatedAt": "2022-02-01T00:28:17.181Z",
+         "__v": 0
+      },
+      {
+         "_id": "61f95285bbc7ff6da7369094",
+         "title": "Calabresa",
+         "desc": "Lorem ipsulum",
+         "img": "/img/pizza.png",
+         "prices": [
+            20,
+            10,
+            30
+         ],
+         "extrasOptions": [],
+         "createdAt": "2022-02-01T15:32:21.526Z",
+         "updatedAt": "2022-02-01T15:32:21.526Z",
+         "__v": 0
+      }
+   ]
+  ```
+
+
+
+### DeleteProduct
+* Método: DELETE
+* Path: `/products/:id`
+* Ouput: (Will return `Not allowed in case you not authorized to make this actin`)
+  ```
+  "The product has been deleted"
   ```
  
-
 
 ## How some feature works
 
