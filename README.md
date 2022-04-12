@@ -62,28 +62,21 @@ Local ingredients are used to craft pizzas that are bursting with flavours you t
 
 
 
-# E-COMMERCE SHOPPER :shopping_cart: :shopping_cart: :shopping_cart:
+# PIZZA ORDERING WEBSITE 🍕 🍕 🍕
 
-
-## Link do deploy no Heroku
-[Link da API](https://shopper-backend-germana.herokuapp.com/)
-
-<h6> Projeto de Back End - Case para seleção da Shopper </h6>
-
-- Este é um projeto básico de back end de e-commerce, com funções de exibir produtos e criar pedidos.
 
 ## DOCUMENTATION
 
-* Clonar este repositório em uma pasta própria;
-* Executar `npm install` para adicionar as dependências;
-* Criar um arquivo `.env` na raiz do projeto e preencher as chaves a seguir com os valores apropriados:
+* Clone this repo into you own folder with `git@github.com:eulazzo/buenapizza.git`
+* run `npm install` to install all dependencies;
+* Create a `.env` file and fill in the following keys:
    ```
    MONGO_URL = 
    ADMIN_USERNAME = 
    ADMIN_PASSWORD = 
    TOKEN =  
    ```
-* run `npm run start` to start the server.
+* run `npm run start` to start up the project.
 
 ## Endpoints
 
