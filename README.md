@@ -26,6 +26,8 @@
 
 ![BUENAPIZZA INTRO GIF](github/introGIF.gif)
 
+### I did a video showing the project, u can check out <a href="https://www.youtube.com/watch?v=Wk5xIke8uIY&t=5s">HERE</a>
+
 ### Topics
 
 * [About the project](#about-the-project)
